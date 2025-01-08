@@ -307,7 +307,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .header-action-btn,
@@ -515,11 +515,15 @@ body {
   20%,
   50%,
   80%,
-  100% { transform: translateY(0); }
+  100% { transform: translateX(0); }
 
-  40% { transform: translateY(-30px); }
+  40% { transform: translateX(30px); 
+    opacity:0.2;
+  }
 
-  60% { transform: translateY(-15px); }
+  60% { transform: translateX(15px);
+  
+    opacity:0.2;}
 }
 
 .about :is(.section-subtitle, .section-title, .section-text) {
@@ -533,7 +537,7 @@ body {
   gap: 15px;
 }
 
-.about-item ion-icon {
+.about-item .ion-icon {
   color: var(--selective-yellow);
   font-size: 20px;
   --ionicon-stroke-width: 50px;
